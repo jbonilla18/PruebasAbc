@@ -3,12 +3,11 @@ package com.globalsqa.task;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
+import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 
-import static com.globalsqa.ui.CrearClienteUI.*;
-import static com.globalsqa.ui.HomeUi.LNK_LOGIN_CUSTOMER;
-import static com.globalsqa.ui.HomeUi.VAL_AMOUNT;
+import static com.globalsqa.ui.CrearClienteUi.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 public class CrearClienteTask implements Task {
@@ -23,8 +22,10 @@ public class CrearClienteTask implements Task {
                 Enter.keyValues("Perez").into(LNK_LAST_NAME),
                 Enter.keyValues("A1115B").into(LNK_POST_CODE),
                 Click.on(LNK_ADD_CUSTOMER2)
-
                 );
+      String alert_mensagge =  BrowseTheWeb.as(actor).getDriver().switchTo().alert().getText();
+
+        System.out.println(alert_mensagge);
     }
     public static Performable on(){
         return instrumented(CrearClienteTask.class);

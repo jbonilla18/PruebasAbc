@@ -10,7 +10,7 @@ Característica: Deposito exitoso
 
     Cuando seleccione la cuenta con numero "1006"
 
-    Entonces realizara un depósito de "100" rupias exitosamente
+    Entonces realizara un depósito de 100 rupias exitosamente
 
 
 

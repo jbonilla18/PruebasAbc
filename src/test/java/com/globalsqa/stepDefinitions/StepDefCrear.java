@@ -17,7 +17,6 @@ public class StepDefCrear {
 
     @Before
     public void setUp() {
-        WebDriverManager.chromedriver().clearDriverCache().setup();
         WebDriverManager.chromedriver().setup();
         setTheStage(new OnlineCast());
     }
@@ -31,8 +30,13 @@ public class StepDefCrear {
     }
     @Cuando("ingrese a la opción de {string}")
     public void ingrese_a_la_opción_de(String string) {
+
     }
     @Entonces("creara un cliente con nombre {string} y código postal {string}")
     public void creara_un_cliente_con_nombre_y_código_postal(String string, String string2) {
+    }
+
+    @Entonces("realizara un depósito de 100 rupias exitosamente")
+    public void realizaraUnDepósitoDeRupiasExitosamente() {
     }
 }

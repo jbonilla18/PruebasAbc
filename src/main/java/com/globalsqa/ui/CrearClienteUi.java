@@ -3,7 +3,7 @@ package com.globalsqa.ui;
 import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
 
-public class CrearClienteUI {
+public class CrearClienteUi {
 
     public static final Target LNK_LOGIN_BANK=Target.the("Acceso a Bank Manager Login")
             .located(By.xpath("//button[contains(@class, 'btn-primary')  and contains(text(), 'Bank Manager Login')]"));
@@ -19,6 +19,7 @@ public class CrearClienteUI {
 
     public static final Target LNK_ADD_CUSTOMER2=Target.the("Boton adicionar Clinte")
             .located(By.cssSelector("button.btn.btn-default[type='submit'][value='']"));
+
 
 
 
