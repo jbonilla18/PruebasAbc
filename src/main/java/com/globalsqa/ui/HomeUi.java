@@ -35,6 +35,6 @@ public class HomeUi {
     public static final Target LBL_Deposit_Successful=Target.the("Mensaje Deposit Successful")
             .located(By.xpath("//span[@class='error ng-binding' and @ng-show='message']\n"));
 
-    //public static final Target LBL_Deposit_Successfl=Target.the("Mensaje Deposit Successful")
-           // .locatedByFirstMatching();
+    public static final Target LBL_Deposit_Successfl=Target.the("Mensaje Deposit Successful")
+            .locatedByFirstMatching();
 }

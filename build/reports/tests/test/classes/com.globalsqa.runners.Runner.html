@@ -23,13 +23,13 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">0</div>
+<div class="counter">1</div>
 <p>tests</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">0</div>
+<div class="counter">1</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">-</div>
+<div class="counter">0.004s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox success" id="successRate">
-<div class="percent">-</div>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,13 +61,81 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Tests</a>
+<a href="#tab0">Failed tests</a>
 </li>
 <li>
-<a href="#tab1">Standard error</a>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="initializationError"></a>
+<h3 class="failures">initializationError</h3>
+<span class="code">
+<pre>io.cucumber.core.gherkin.FeatureParserException: Failed to parse resource at: file:///C:/Users/SQA/OneDrive%20-%20SQA/Escritorio/ProyectoBanco/src/test/resources/features/deposito.feature
+(7:3): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'Escenario outline: Deposito en cuenta exitoso'
+(9:5): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'Dado que el cliente &quot;Harry Potter&quot; se autentica en el banco'
+(11:5): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'Cuando seleccione la cuenta con numero &quot;1006&quot;'
+(13:5): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'Entonces realizara un depósito de 100 rupias exitosamente'
+(17:0): unexpected end of file, expected: #TagLine, #RuleLine, #Comment, #Empty
+	at app//io.cucumber.core.gherkin.messages.GherkinMessagesFeatureParser.parse(GherkinMessagesFeatureParser.java:53)
+	at app//io.cucumber.core.feature.FeatureParser.parseResource(FeatureParser.java:45)
+	at java.base@11.0.21/java.util.function.BiFunction.lambda$andThen$0(BiFunction.java:70)
+	at app//io.cucumber.core.resource.ResourceScanner.lambda$processResource$1(ResourceScanner.java:79)
+	at app//io.cucumber.core.resource.PathScanner$ResourceFileVisitor.visitFile(PathScanner.java:75)
+	at app//io.cucumber.core.resource.PathScanner$ResourceFileVisitor.visitFile(PathScanner.java:60)
+	at java.base@11.0.21/java.nio.file.Files.walkFileTree(Files.java:2725)
+	at app//io.cucumber.core.resource.PathScanner.findResourcesForPath(PathScanner.java:53)
+	at app//io.cucumber.core.resource.PathScanner.findResourcesForUri(PathScanner.java:31)
+	at app//io.cucumber.core.resource.ResourceScanner.findResourcesForUri(ResourceScanner.java:61)
+	at app//io.cucumber.core.resource.ResourceScanner.scanForResourcesUri(ResourceScanner.java:134)
+	at app//io.cucumber.core.runtime.FeaturePathFeatureSupplier.loadFeatures(FeaturePathFeatureSupplier.java:62)
+	at app//io.cucumber.core.runtime.FeaturePathFeatureSupplier.get(FeaturePathFeatureSupplier.java:45)
+	at app//io.cucumber.junit.CucumberSerenityRunner.&lt;init&gt;(CucumberSerenityRunner.java:133)
+	at app//net.serenitybdd.cucumber.CucumberWithSerenity.&lt;init&gt;(CucumberWithSerenity.java:12)
+	at java.base@11.0.21/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base@11.0.21/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base@11.0.21/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base@11.0.21/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at app//org.junit.internal.builders.AnnotatedBuilder.buildRunner(AnnotatedBuilder.java:104)
+	at app//org.junit.internal.builders.AnnotatedBuilder.runnerForClass(AnnotatedBuilder.java:86)
+	at app//org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:70)
+	at app//org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass(AllDefaultPossibilitiesBuilder.java:37)
+	at app//org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:70)
+	at app//org.junit.internal.requests.ClassRequest.createRunner(ClassRequest.java:28)
+	at app//org.junit.internal.requests.MemoizingRequest.getRunner(MemoizingRequest.java:19)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:78)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base@11.0.21/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.21/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.21/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.21/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:176)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -77,16 +145,21 @@
 <th>Result</th>
 </tr>
 </thead>
+<tr>
+<td class="failures">initializationError</td>
+<td class="failures">0.004s</td>
+<td class="failures">failed</td>
+</tr>
 </table>
 </div>
-<div id="tab1" class="tab">
+<div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
 <pre>SLF4J: No SLF4J providers were found.
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
 SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
-SLF4J: Ignoring binding found at [jar:file:/C:/Users/SQA/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-simple/1.7.7/8095d0b9f7e0a9cd79a663c740e0f8fb31d0e2c8/slf4j-simple-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Ignoring binding found at [jar:file:/C:/Users/SQA/.m2/repository/org/slf4j/slf4j-simple/1.7.7/slf4j-simple-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
 SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
 </pre>
 </span>
@@ -99,7 +172,7 @@ SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.4</a> at 19/04/2024, 10:39:34 a. m.</p>
+<a href="http://www.gradle.org">Gradle 7.4</a> at 23/04/2024, 6:57:54 p. m.</p>
 </div>
 </div>
 </body>

@@ -4,7 +4,7 @@ Característica: Deposito exitoso
 
 @TEST1
 
-  Escenario: Deposito en cuenta exitoso
+  Escenario outline: Deposito en cuenta exitoso
 
     Dado que el cliente "Harry Potter" se autentica en el banco
 

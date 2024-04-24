@@ -6,6 +6,7 @@ import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
+import org.junit.Assert;
 
 import static com.globalsqa.ui.CrearClienteUi.LNK_ADD_CUSTOMER;
 import static com.globalsqa.ui.CrearClienteUi.LNK_LOGIN_BANK;
@@ -29,6 +30,8 @@ public class CrearCuentaTask implements Task {
         String alert_mensagge =  BrowseTheWeb.as(actor).getDriver().switchTo().alert().getText();
 
         System.out.println(alert_mensagge);
+        String mensajeSinId = alert_mensagge.replaceAll("id :\\d+", "id :");
+        Assert.assertEquals("Account created successfully with account Number :1016", mensajeSinId);
     }
 
         public static Performable on(){

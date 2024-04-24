@@ -1,12 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.globalsqa.runners.Runner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="SQABOG-PCC84630" time="0.0">
+<testsuite name="com.globalsqa.runners.Runner" tests="1" skipped="0" failures="1" errors="0" timestamp="2024-04-23T23:57:54" hostname="SQABOG-PCC84630" time="0.004">
   <properties/>
+  <testcase name="initializationError" classname="com.globalsqa.runners.Runner" time="0.004">
+    <failure message="io.cucumber.core.gherkin.FeatureParserException: Failed to parse resource at: file:///C:/Users/SQA/OneDrive%20-%20SQA/Escritorio/ProyectoBanco/src/test/resources/features/deposito.feature&#10;(7:3): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'Escenario outline: Deposito en cuenta exitoso'&#10;(9:5): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'Dado que el cliente &quot;Harry Potter&quot; se autentica en el banco'&#10;(11:5): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'Cuando seleccione la cuenta con numero &quot;1006&quot;'&#10;(13:5): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'Entonces realizara un depósito de 100 rupias exitosamente'&#10;(17:0): unexpected end of file, expected: #TagLine, #RuleLine, #Comment, #Empty" type="io.cucumber.core.gherkin.FeatureParserException">io.cucumber.core.gherkin.FeatureParserException: Failed to parse resource at: file:///C:/Users/SQA/OneDrive%20-%20SQA/Escritorio/ProyectoBanco/src/test/resources/features/deposito.feature
+(7:3): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'Escenario outline: Deposito en cuenta exitoso'
+(9:5): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'Dado que el cliente &quot;Harry Potter&quot; se autentica en el banco'
+(11:5): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'Cuando seleccione la cuenta con numero &quot;1006&quot;'
+(13:5): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'Entonces realizara un depósito de 100 rupias exitosamente'
+(17:0): unexpected end of file, expected: #TagLine, #RuleLine, #Comment, #Empty
+	at app//io.cucumber.core.gherkin.messages.GherkinMessagesFeatureParser.parse(GherkinMessagesFeatureParser.java:53)
+	at app//io.cucumber.core.feature.FeatureParser.parseResource(FeatureParser.java:45)
+	at java.base@11.0.21/java.util.function.BiFunction.lambda$andThen$0(BiFunction.java:70)
+	at app//io.cucumber.core.resource.ResourceScanner.lambda$processResource$1(ResourceScanner.java:79)
+	at app//io.cucumber.core.resource.PathScanner$ResourceFileVisitor.visitFile(PathScanner.java:75)
+	at app//io.cucumber.core.resource.PathScanner$ResourceFileVisitor.visitFile(PathScanner.java:60)
+	at java.base@11.0.21/java.nio.file.Files.walkFileTree(Files.java:2725)
+	at app//io.cucumber.core.resource.PathScanner.findResourcesForPath(PathScanner.java:53)
+	at app//io.cucumber.core.resource.PathScanner.findResourcesForUri(PathScanner.java:31)
+	at app//io.cucumber.core.resource.ResourceScanner.findResourcesForUri(ResourceScanner.java:61)
+	at app//io.cucumber.core.resource.ResourceScanner.scanForResourcesUri(ResourceScanner.java:134)
+	at app//io.cucumber.core.runtime.FeaturePathFeatureSupplier.loadFeatures(FeaturePathFeatureSupplier.java:62)
+	at app//io.cucumber.core.runtime.FeaturePathFeatureSupplier.get(FeaturePathFeatureSupplier.java:45)
+	at app//io.cucumber.junit.CucumberSerenityRunner.&lt;init&gt;(CucumberSerenityRunner.java:133)
+	at app//net.serenitybdd.cucumber.CucumberWithSerenity.&lt;init&gt;(CucumberWithSerenity.java:12)
+	at java.base@11.0.21/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base@11.0.21/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base@11.0.21/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base@11.0.21/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at app//org.junit.internal.builders.AnnotatedBuilder.buildRunner(AnnotatedBuilder.java:104)
+	at app//org.junit.internal.builders.AnnotatedBuilder.runnerForClass(AnnotatedBuilder.java:86)
+	at app//org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:70)
+	at app//org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass(AllDefaultPossibilitiesBuilder.java:37)
+	at app//org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:70)
+	at app//org.junit.internal.requests.ClassRequest.createRunner(ClassRequest.java:28)
+	at app//org.junit.internal.requests.MemoizingRequest.getRunner(MemoizingRequest.java:19)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:78)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base@11.0.21/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.21/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.21/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.21/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:176)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[SLF4J: No SLF4J providers were found.
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
 SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
-SLF4J: Ignoring binding found at [jar:file:/C:/Users/SQA/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-simple/1.7.7/8095d0b9f7e0a9cd79a663c740e0f8fb31d0e2c8/slf4j-simple-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Ignoring binding found at [jar:file:/C:/Users/SQA/.m2/repository/org/slf4j/slf4j-simple/1.7.7/slf4j-simple-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
 SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
 ]]></system-err>
 </testsuite>

@@ -34,10 +34,13 @@ public class StepDef {
                 HomeTask.on()
         );
     }
+
     @Cuando("seleccione la cuenta con numero {string}")
     public void seleccioneLaCuentaConNumero(String string) {
 
+
     }
+
     @Entonces("realizara un depósito de {string} rupias exitosamente")
     public void ValidateDeposit() {
         theActorInTheSpotlight().should(
@@ -46,12 +49,12 @@ public class StepDef {
                 )
         );
     }
-    public void realizaraUnDepósitoDeRupiasExitosamente(String string)
-        {
+
+    public void realizaraUnDepósitoDeRupiasExitosamente(String string) {
 
     }
 
-
-
-
 }
+
+
+
