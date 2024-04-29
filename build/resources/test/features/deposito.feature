@@ -2,15 +2,19 @@
 
 Característica: Deposito exitoso
 
-@TEST1
+  @TEST1
+  Esquema del escenario:
+    Dado que el cliente Harry Potter se autentica en el banco
+    Cuando seleccione la cuenta con numero "<Cuenta>"
 
-  Escenario outline: Deposito en cuenta exitoso
+    Entonces realizara un deposito de "<Valor>" rupias exitosamente
 
-    Dado que el cliente "Harry Potter" se autentica en el banco
+    Ejemplos:
+      | Cuenta | Valor |
+      | 1006 | 100 |
+      | 1005 | 200 |
+      | 1004 | 300 |
 
-    Cuando seleccione la cuenta con numero "1006"
-
-    Entonces realizara un depósito de 100 rupias exitosamente
 
 
 

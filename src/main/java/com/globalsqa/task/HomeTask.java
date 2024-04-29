@@ -6,6 +6,7 @@ import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
+import net.serenitybdd.screenplay.ui.Select;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -13,9 +14,11 @@ import java.util.Map;
 
 import static com.globalsqa.ui.HomeUi.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
+import static net.serenitybdd.screenplay.ui.Select.optionNumber;
 
-    public class HomeTask implements Task {
+public class HomeTask implements Task {
         private static ArrayList<Map<String, String>> leerExcel = new ArrayList();
+
     @Override
     public <T extends Actor> void performAs(T actor) {
 
@@ -30,9 +33,12 @@ import static net.serenitybdd.screenplay.Tasks.instrumented;
                 Click.on(SEL_HARRY),
                 Click.on(BTN_LOGIN),
                 Click.on(BTN_CUENTA),
+
                 Click.on(NUM_CUENTA),
+
                 Click.on(BTN_DEPOSITO),
-                Enter.keyValues(leerExcel.get(0).get("Valor")).into(VAL_AMOUNT),
+                Enter.keyValues(leerExcel.get(1).get("Valor")).into(VAL_AMOUNT),
+
                 Click.on(BTN_DEPOSITO2)
 
         );

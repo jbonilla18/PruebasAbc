@@ -1,5 +1,5 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
 "Creacion de cliente exitoso","Deposito en cuenta exitoso","IGNORED","2024-04-16T12:48:29.8548168-05:00[America/Bogota]","0.0","7.14"
-"Creacion de cliente exitoso","Crear Cliente","IGNORED","2024-04-23T11:52:47.1634198-05:00[America/Bogota]","0.0","6.9"
-"Creacion de cuenta exitoso","Crear Cuenta","IGNORED","2024-04-23T11:52:54.1149297-05:00[America/Bogota]","0.0","4.1"
-"Deposito exitoso","Deposito en cuenta exitoso","SUCCESS","2024-04-23T15:56:25.9453846-05:00[America/Bogota]","0.0","42.53"
+"Creacion de cliente exitoso","Crear Cliente","SUCCESS","2024-04-24T16:12:38.3674382-05:00[America/Bogota]","0.0","88.16"
+"Creacion de cuenta exitoso","Crear Cuenta","SUCCESS","2024-04-24T16:14:47.6459404-05:00[America/Bogota]","0.0","31.59"
+"Deposito exitoso","Deposito en cuenta exitoso","SUCCESS","2024-04-24T08:49:57.3465288-05:00[America/Bogota]","0.0","37.67"
