@@ -23,8 +23,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Map;
 
-import static com.globalsqa.questions.ValidateDeposit.validateDeposit;
-import static com.globalsqa.ui.HomeUi.NUM_CUENTA;
+
 import static com.globalsqa.ui.HomeUi.VAL_AMOUNT;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.*;
@@ -42,9 +41,15 @@ public class StepDef {
     @Dado("que el cliente Harry Potter se autentica en el banco")
     public void queElClienteHarryPotterSeAutenticaEnElBanco() {
         theActorCalled("user").wasAbleTo(
-                Open.url("https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login"),
-                HomeTask.on()
+                Open.url("https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login")
+
         );
+    }
+
+    @Cuando("seleccione la cuenta con numero {int}")
+    public void seleccioneLaCuentaConNumero(Integer int1) {
+        theActorCalled("user").wasAbleTo( HomeTask.on(int1));
+
     }
 
     @Cuando("seleccione la cuenta con numero Cuenta")
@@ -55,7 +60,7 @@ public class StepDef {
 
 
             OnStage.theActorInTheSpotlight()
-                    .should(GivenWhenThen.seeThat(WebElementQuestion.the(NUM_CUENTA),
+                    .should(GivenWhenThen.seeThat(WebElementQuestion.the("NUM_CUENTA"),
                                     WebElementStateMatchers.containsText(dataExcel.get(1).get("Cuenta"))
                             )
                     );
@@ -66,8 +71,8 @@ public class StepDef {
 
     }
 
-    @Entonces("realizara un deposito de Valor rupias exitosamente")
-    public void realizaraUnDepositoDeValorRupiasExitosamente() {
+    @Entonces("realizara un deposito de {string} rupias exitosamente")
+    public void realizaraUnDepositoDeRupiasExitosamente(String string) {
         ArrayList<Map<String, String>> dataExcel;
         try {
             dataExcel = Excel.leerDatosDeHojaDeExcel("datos/Data.xlsx", "Cuentas");

@@ -151,7 +151,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 26-04-2024 17:20</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 29-04-2024 10:22</span>
     <br style="clear:left"/>
 </div>
 
@@ -192,9 +192,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon fa-2x' title='ERROR'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
                             <span class="test-case-title">
-                                <span class="error-color">
+                                <span class="success-color">
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -210,86 +210,54 @@
 
     <div class="story-title">
         <h3>Scenario:</h3>
-        <div class="scenario">Dado que el cliente Harry Potter se autentica en el banco<br>Cuando seleccione la cuenta con numero "&lt;Cuenta&gt;"<br>Entonces realizara un deposito de "&lt;Valor&gt;" rupias exitosamente</div>
+        <div class="scenario">Dado que el cliente Harry Potter se autentica en el banco<br>Cuando seleccione la cuenta con numero &lt;Valor&gt;</div>
     </div>
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
-            <div class="screenshotFailure panel panel-danger">
-    <div style="display:block">
-        <div class="table">
-            <div class="row">
-                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
-                    <span class="error-message error-message-title">Number format exception: For input string: 'public'</span>
-                </div>
-                <div class="col-sm-2">
-                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall"
-                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
-                </div>
-             </div>
-        </div>
-    <div>
-
-    <!-- Details Section -->
-    <div class="row stacktrace-details">
-      <div class="col">
-        <div class="collapse multi-collapse" id="stacktraceModal-overall">
-            <div class="card">
-                <div class="card-header">
-                    <h4>java.lang.NumberFormatException </h4>
-                </div>
-                <div class="card-body">
-                    <div>
-                        <pre>io.github.bonigarcia.wdm.managers.ChromeDriverManager.buildUrl(ChromeDriverManager.java:178)<br />io.github.bonigarcia.wdm.managers.ChromeDriverManager.buildUrl(ChromeDriverManager.java:155)<br />io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1272)<br />io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1189)<br />io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1451)<br />io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1432)<br />io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1195)<br />io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1425)<br />io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1195)<br />io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)<br />com.globalsqa.stepDefinitions.StepDefCrearCuenta.setUp(StepDefCrearCuenta.java:20)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java:66)<br />io.cucumber.java.Invoker.invoke(Invoker.java:24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)<br />io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)<br />io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)<br />io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:57)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:89)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:75)<br />io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)<br />io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)<br />io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)<br />io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:259)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:58)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-                <div class="panel-body">
-                    <a href="#" target="_blank" class="btn btn-info">HTML Source</a>
-                </div>
-            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="e00a026ff906371bafae4a9e156ed6ae480af2e964790a7fba3e93fff8acd2bb.png" title=" Example 1: {Cuenta=1006, Valor=100}" width="1366"/>
+                <img src="e00a026ff906371bafae4a9e156ed6ae480af2e964790a7fba3e93fff8acd2bb.png" title=" Example 1: {Valor=0}" width="1366"/>
                 <img src="e00a026ff906371bafae4a9e156ed6ae480af2e964790a7fba3e93fff8acd2bb.png" title=" Dado que el cliente Harry Potter se autentica en el banco" width="1366"/>
                 <img src="e00a026ff906371bafae4a9e156ed6ae480af2e964790a7fba3e93fff8acd2bb.png" title=" user opens the https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login" width="1366"/>
+                <img src="52b4c40288c18013211b60798d6dd3f00c1346b4572ac6a1b12599bd606a6dcd.png" title=" Dado que el cliente Harry Potter se autentica en el banco (completed)" width="1366"/>
+                <img src="52b4c40288c18013211b60798d6dd3f00c1346b4572ac6a1b12599bd606a6dcd.png" title=" Cuando seleccione la cuenta con numero 0" width="1366"/>
                 <img src="52b4c40288c18013211b60798d6dd3f00c1346b4572ac6a1b12599bd606a6dcd.png" title=" User home task" width="1366"/>
                 <img src="52b4c40288c18013211b60798d6dd3f00c1346b4572ac6a1b12599bd606a6dcd.png" title=" user clicks on Acceso a Login" width="1366"/>
                 <img src="5aa5b0dc494acdbe9b6608ba7791ce6389f02e065ae697fd95a8492fe1c2b4e8.png" title=" user clicks on Acceso a Login" width="1366"/>
                 <img src="5aa5b0dc494acdbe9b6608ba7791ce6389f02e065ae697fd95a8492fe1c2b4e8.png" title=" user clicks on Acceso a Login (completed)" width="1366"/>
                 <img src="5aa5b0dc494acdbe9b6608ba7791ce6389f02e065ae697fd95a8492fe1c2b4e8.png" title=" user clicks on Your Name" width="1366"/>
-                <img src="c90635a292c15690386f74c84aa030bc1bd4d7e7c653dce0b9c5ec8b239b3e14.png" title=" user clicks on Your Name" width="1366"/>
-                <img src="c90635a292c15690386f74c84aa030bc1bd4d7e7c653dce0b9c5ec8b239b3e14.png" title=" user clicks on Your Name (completed)" width="1366"/>
-                <img src="c90635a292c15690386f74c84aa030bc1bd4d7e7c653dce0b9c5ec8b239b3e14.png" title=" user clicks on Harry Potter" width="1366"/>
-                <img src="21cfccc428308cbd83b1e26484ddf5819fe69cedd78e7bd20493381bf29dab88.png" title=" user clicks on Harry Potter" width="1366"/>
-                <img src="21cfccc428308cbd83b1e26484ddf5819fe69cedd78e7bd20493381bf29dab88.png" title=" user clicks on Harry Potter (completed)" width="1366"/>
-                <img src="21cfccc428308cbd83b1e26484ddf5819fe69cedd78e7bd20493381bf29dab88.png" title=" user clicks on Login" width="1366"/>
-                <img src="032f3c75dc3e5fe844f4b58d673f74c27487ca7fc9453aa94b75728fbe463dff.png" title=" user clicks on Login" width="1366"/>
-                <img src="032f3c75dc3e5fe844f4b58d673f74c27487ca7fc9453aa94b75728fbe463dff.png" title=" user clicks on Login (completed)" width="1366"/>
+                <img src="8761e6edab9b7223c741351e8536032e084e582d152278490dd48ac0026c972c.png" title=" user clicks on Your Name" width="1366"/>
+                <img src="8761e6edab9b7223c741351e8536032e084e582d152278490dd48ac0026c972c.png" title=" user clicks on Your Name (completed)" width="1366"/>
+                <img src="8761e6edab9b7223c741351e8536032e084e582d152278490dd48ac0026c972c.png" title=" user clicks on Harry Potter" width="1366"/>
+                <img src="eca5ed18f3fbf1871ca10db918a9ef7db68df2513004175acb3003d2a50eff6b.png" title=" user clicks on Harry Potter" width="1366"/>
+                <img src="eca5ed18f3fbf1871ca10db918a9ef7db68df2513004175acb3003d2a50eff6b.png" title=" user clicks on Harry Potter (completed)" width="1366"/>
+                <img src="eca5ed18f3fbf1871ca10db918a9ef7db68df2513004175acb3003d2a50eff6b.png" title=" user clicks on Login" width="1366"/>
+                <img src="9b1d010b12ddd84b59ed2b0ca4ac52322f783d3f0d40402e259f87d404e1842c.png" title=" user clicks on Login" width="1366"/>
+                <img src="9b1d010b12ddd84b59ed2b0ca4ac52322f783d3f0d40402e259f87d404e1842c.png" title=" user clicks on Login (completed)" width="1366"/>
                 <img src="28871c7b1c3ab4ed0fddaa1a6bfd22df0d43f12a37971b5f3f04ee167d9256a6.png" title=" user clicks on Cuenta" width="1366"/>
                 <img src="8d49308faa39ed0f7652a1b4e2fe1ecd0ade4cfdc858440c4294b29902cba812.png" title=" user clicks on Cuenta" width="1366"/>
                 <img src="8d49308faa39ed0f7652a1b4e2fe1ecd0ade4cfdc858440c4294b29902cba812.png" title=" user clicks on Cuenta (completed)" width="1366"/>
-                <img src="8d49308faa39ed0f7652a1b4e2fe1ecd0ade4cfdc858440c4294b29902cba812.png" title=" user clicks on Numero de Cuenta 1006" width="1366"/>
-                <img src="341466c9d33e188bf86e418e0888681b6adc1ac9af0e40f623d8b4f5f781b701.png" title=" user clicks on Numero de Cuenta 1006" width="1366"/>
-                <img src="341466c9d33e188bf86e418e0888681b6adc1ac9af0e40f623d8b4f5f781b701.png" title=" user clicks on Numero de Cuenta 1006 (completed)" width="1366"/>
+                <img src="8d49308faa39ed0f7652a1b4e2fe1ecd0ade4cfdc858440c4294b29902cba812.png" title=" user clicks on Boton seleccionar una ubicacion" width="1366"/>
+                <img src="341466c9d33e188bf86e418e0888681b6adc1ac9af0e40f623d8b4f5f781b701.png" title=" user clicks on Boton seleccionar una ubicacion" width="1366"/>
+                <img src="341466c9d33e188bf86e418e0888681b6adc1ac9af0e40f623d8b4f5f781b701.png" title=" user clicks on Boton seleccionar una ubicacion (completed)" width="1366"/>
                 <img src="341466c9d33e188bf86e418e0888681b6adc1ac9af0e40f623d8b4f5f781b701.png" title=" user clicks on Boton Deposito" width="1366"/>
                 <img src="679c349cde57cf4a7b36362d5d65d6c4d132d66d3618607ead999cab494e9d32.png" title=" user clicks on Boton Deposito" width="1366"/>
                 <img src="679c349cde57cf4a7b36362d5d65d6c4d132d66d3618607ead999cab494e9d32.png" title=" user clicks on Boton Deposito (completed)" width="1366"/>
-                <img src="d28200f980693ec5a0d56bdd569eda7d3ea39050e441c3ed15a8c07929ea397a.png" title=" user enters '200' into AMOUNT" width="1366"/>
-                <img src="9a530b6a8d2d57726dedb6969bab9554f503efde8c03ea5bcf39431a1a0eece7.png" title=" user enters '200' into AMOUNT (completed)" width="1366"/>
-                <img src="9a530b6a8d2d57726dedb6969bab9554f503efde8c03ea5bcf39431a1a0eece7.png" title=" user clicks on Boton Deposito Final" width="1366"/>
-                <img src="f1ec3c5837e82ae6ab52454ec18d168112891fbb751acb030df3881a4ec621d9.png" title=" user clicks on Boton Deposito Final" width="1366"/>
-                <img src="f1ec3c5837e82ae6ab52454ec18d168112891fbb751acb030df3881a4ec621d9.png" title=" user clicks on Boton Deposito Final (completed)" width="1366"/>
-                <img src="1428589db91796e6cf78feb489c80959bd9c43eb8b4e64866fe5a86109408422.png" title=" User home task (completed)" width="1366"/>
-                <img src="1428589db91796e6cf78feb489c80959bd9c43eb8b4e64866fe5a86109408422.png" title=" Dado que el cliente Harry Potter se autentica en el banco (completed)" width="1366"/>
-                <img src="1428589db91796e6cf78feb489c80959bd9c43eb8b4e64866fe5a86109408422.png" title=" Cuando seleccione la cuenta con numero &quot;1006&quot;" width="1366"/>
-                <img src="e00a026ff906371bafae4a9e156ed6ae480af2e964790a7fba3e93fff8acd2bb.png" title=" Example 2: {Cuenta=1005, Valor=200}" width="1366"/>
+                <img src="d28200f980693ec5a0d56bdd569eda7d3ea39050e441c3ed15a8c07929ea397a.png" title=" user enters '100' into AMOUNT" width="1366"/>
+                <img src="507a13457204f542401b60dd2290a2698292adb7cae6f19daef08ccd19a7c108.png" title=" user enters '100' into AMOUNT (completed)" width="1366"/>
+                <img src="507a13457204f542401b60dd2290a2698292adb7cae6f19daef08ccd19a7c108.png" title=" user clicks on Boton Deposito Final" width="1366"/>
+                <img src="f365adf024f2f65d39fdb1120e1b8771b2da2d5a3fc79dbedac63e3980ab0471.png" title=" user clicks on Boton Deposito Final" width="1366"/>
+                <img src="f365adf024f2f65d39fdb1120e1b8771b2da2d5a3fc79dbedac63e3980ab0471.png" title=" user clicks on Boton Deposito Final (completed)" width="1366"/>
+                <img src="23083e66dbf79e1adff77cc68b65543e238aaf373f2a04d59bfd857935d72f06.png" title=" User home task (completed)" width="1366"/>
+                <img src="23083e66dbf79e1adff77cc68b65543e238aaf373f2a04d59bfd857935d72f06.png" title=" Cuando seleccione la cuenta con numero 0 (completed)" width="1366"/>
+                <img src="23083e66dbf79e1adff77cc68b65543e238aaf373f2a04d59bfd857935d72f06.png" title=" Example 1: {Valor=0} (completed)" width="1366"/>
+                <img src="e00a026ff906371bafae4a9e156ed6ae480af2e964790a7fba3e93fff8acd2bb.png" title=" Example 2: {Valor=1}" width="1366"/>
                 <img src="e00a026ff906371bafae4a9e156ed6ae480af2e964790a7fba3e93fff8acd2bb.png" title=" Dado que el cliente Harry Potter se autentica en el banco" width="1366"/>
                 <img src="e00a026ff906371bafae4a9e156ed6ae480af2e964790a7fba3e93fff8acd2bb.png" title=" user opens the https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login" width="1366"/>
-                <img src="e00a026ff906371bafae4a9e156ed6ae480af2e964790a7fba3e93fff8acd2bb.png" title=" User home task" width="1366"/>
+                <img src="52b4c40288c18013211b60798d6dd3f00c1346b4572ac6a1b12599bd606a6dcd.png" title=" Dado que el cliente Harry Potter se autentica en el banco (completed)" width="1366"/>
+                <img src="52b4c40288c18013211b60798d6dd3f00c1346b4572ac6a1b12599bd606a6dcd.png" title=" Cuando seleccione la cuenta con numero 1" width="1366"/>
+                <img src="52b4c40288c18013211b60798d6dd3f00c1346b4572ac6a1b12599bd606a6dcd.png" title=" User home task" width="1366"/>
                 <img src="52b4c40288c18013211b60798d6dd3f00c1346b4572ac6a1b12599bd606a6dcd.png" title=" user clicks on Acceso a Login" width="1366"/>
                 <img src="5aa5b0dc494acdbe9b6608ba7791ce6389f02e065ae697fd95a8492fe1c2b4e8.png" title=" user clicks on Acceso a Login" width="1366"/>
                 <img src="5aa5b0dc494acdbe9b6608ba7791ce6389f02e065ae697fd95a8492fe1c2b4e8.png" title=" user clicks on Acceso a Login (completed)" width="1366"/>
@@ -300,25 +268,59 @@
                 <img src="e69fb50798d2b02522c86b436697c62a643fc437fbd6e5a588f148d0c700eb90.png" title=" user clicks on Harry Potter" width="1366"/>
                 <img src="e69fb50798d2b02522c86b436697c62a643fc437fbd6e5a588f148d0c700eb90.png" title=" user clicks on Harry Potter (completed)" width="1366"/>
                 <img src="e69fb50798d2b02522c86b436697c62a643fc437fbd6e5a588f148d0c700eb90.png" title=" user clicks on Login" width="1366"/>
-                <img src="4938917d79d6ddae08900cf28857bc17eee4be62f3b3721f4673db340141b9b2.png" title=" user clicks on Login" width="1366"/>
-                <img src="4938917d79d6ddae08900cf28857bc17eee4be62f3b3721f4673db340141b9b2.png" title=" user clicks on Login (completed)" width="1366"/>
+                <img src="df4f956c41317ac6481c050ee93dd086eaea03b39d899c69fd658223df39dc09.png" title=" user clicks on Login" width="1366"/>
+                <img src="df4f956c41317ac6481c050ee93dd086eaea03b39d899c69fd658223df39dc09.png" title=" user clicks on Login (completed)" width="1366"/>
                 <img src="28871c7b1c3ab4ed0fddaa1a6bfd22df0d43f12a37971b5f3f04ee167d9256a6.png" title=" user clicks on Cuenta" width="1366"/>
                 <img src="8d49308faa39ed0f7652a1b4e2fe1ecd0ade4cfdc858440c4294b29902cba812.png" title=" user clicks on Cuenta" width="1366"/>
                 <img src="8d49308faa39ed0f7652a1b4e2fe1ecd0ade4cfdc858440c4294b29902cba812.png" title=" user clicks on Cuenta (completed)" width="1366"/>
-                <img src="8d49308faa39ed0f7652a1b4e2fe1ecd0ade4cfdc858440c4294b29902cba812.png" title=" user clicks on Numero de Cuenta 1006" width="1366"/>
-                <img src="341466c9d33e188bf86e418e0888681b6adc1ac9af0e40f623d8b4f5f781b701.png" title=" user clicks on Numero de Cuenta 1006" width="1366"/>
-                <img src="341466c9d33e188bf86e418e0888681b6adc1ac9af0e40f623d8b4f5f781b701.png" title=" user clicks on Numero de Cuenta 1006 (completed)" width="1366"/>
-                <img src="341466c9d33e188bf86e418e0888681b6adc1ac9af0e40f623d8b4f5f781b701.png" title=" user clicks on Boton Deposito" width="1366"/>
-                <img src="679c349cde57cf4a7b36362d5d65d6c4d132d66d3618607ead999cab494e9d32.png" title=" user clicks on Boton Deposito" width="1366"/>
-                <img src="679c349cde57cf4a7b36362d5d65d6c4d132d66d3618607ead999cab494e9d32.png" title=" user clicks on Boton Deposito (completed)" width="1366"/>
-                <img src="679c349cde57cf4a7b36362d5d65d6c4d132d66d3618607ead999cab494e9d32.png" title=" user enters '200' into AMOUNT" width="1366"/>
-                <img src="daf6ce8dbe8c0c6b1708c2fedf696f17b2d12495f599c340b35021f76fff5bb9.png" title=" user enters '200' into AMOUNT (completed)" width="1366"/>
-                <img src="daf6ce8dbe8c0c6b1708c2fedf696f17b2d12495f599c340b35021f76fff5bb9.png" title=" user clicks on Boton Deposito Final" width="1366"/>
-                <img src="e44054349a43953082e7c2370d8c814d5d34fdd4993802f5caf316f22f37acc3.png" title=" user clicks on Boton Deposito Final" width="1366"/>
-                <img src="e44054349a43953082e7c2370d8c814d5d34fdd4993802f5caf316f22f37acc3.png" title=" user clicks on Boton Deposito Final (completed)" width="1366"/>
-                <img src="1428589db91796e6cf78feb489c80959bd9c43eb8b4e64866fe5a86109408422.png" title=" User home task (completed)" width="1366"/>
-                <img src="1428589db91796e6cf78feb489c80959bd9c43eb8b4e64866fe5a86109408422.png" title=" Dado que el cliente Harry Potter se autentica en el banco (completed)" width="1366"/>
-                <img src="1428589db91796e6cf78feb489c80959bd9c43eb8b4e64866fe5a86109408422.png" title=" Cuando seleccione la cuenta con numero &quot;1005&quot;: <span class='error-color'>ERROR</span>" width="1366"/>
+                <img src="8d49308faa39ed0f7652a1b4e2fe1ecd0ade4cfdc858440c4294b29902cba812.png" title=" user clicks on Boton seleccionar una ubicacion" width="1366"/>
+                <img src="c0219d1c7377ffd2796053c88b442e1b86b3cba754213e4501f88cfc6dec137b.png" title=" user clicks on Boton seleccionar una ubicacion" width="1366"/>
+                <img src="c0219d1c7377ffd2796053c88b442e1b86b3cba754213e4501f88cfc6dec137b.png" title=" user clicks on Boton seleccionar una ubicacion (completed)" width="1366"/>
+                <img src="c0219d1c7377ffd2796053c88b442e1b86b3cba754213e4501f88cfc6dec137b.png" title=" user clicks on Boton Deposito" width="1366"/>
+                <img src="ddcff18fecfd106cc615f900b93b66e505cdf72f389a1283bcd6336b5adb9da3.png" title=" user clicks on Boton Deposito" width="1366"/>
+                <img src="ddcff18fecfd106cc615f900b93b66e505cdf72f389a1283bcd6336b5adb9da3.png" title=" user clicks on Boton Deposito (completed)" width="1366"/>
+                <img src="ddcff18fecfd106cc615f900b93b66e505cdf72f389a1283bcd6336b5adb9da3.png" title=" user enters '200' into AMOUNT" width="1366"/>
+                <img src="dfba6898bdc69a618806b14d9482ea7a1194278524be8d425b913418b1d0cede.png" title=" user enters '200' into AMOUNT (completed)" width="1366"/>
+                <img src="dfba6898bdc69a618806b14d9482ea7a1194278524be8d425b913418b1d0cede.png" title=" user clicks on Boton Deposito Final" width="1366"/>
+                <img src="b6032c4dfbd26161ddb94c8ec454ae438cf21312019df74c36caf9ad718d54d3.png" title=" user clicks on Boton Deposito Final" width="1366"/>
+                <img src="b6032c4dfbd26161ddb94c8ec454ae438cf21312019df74c36caf9ad718d54d3.png" title=" user clicks on Boton Deposito Final (completed)" width="1366"/>
+                <img src="58907a4d955093f32114ac663d70ac1a4634d33e8a91900f1d08b09103560f78.png" title=" User home task (completed)" width="1366"/>
+                <img src="58907a4d955093f32114ac663d70ac1a4634d33e8a91900f1d08b09103560f78.png" title=" Cuando seleccione la cuenta con numero 1 (completed)" width="1366"/>
+                <img src="58907a4d955093f32114ac663d70ac1a4634d33e8a91900f1d08b09103560f78.png" title=" Example 2: {Valor=1} (completed)" width="1366"/>
+                <img src="e00a026ff906371bafae4a9e156ed6ae480af2e964790a7fba3e93fff8acd2bb.png" title=" Example 3: {Valor=2}" width="1366"/>
+                <img src="e00a026ff906371bafae4a9e156ed6ae480af2e964790a7fba3e93fff8acd2bb.png" title=" Dado que el cliente Harry Potter se autentica en el banco" width="1366"/>
+                <img src="e00a026ff906371bafae4a9e156ed6ae480af2e964790a7fba3e93fff8acd2bb.png" title=" user opens the https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login" width="1366"/>
+                <img src="52b4c40288c18013211b60798d6dd3f00c1346b4572ac6a1b12599bd606a6dcd.png" title=" Dado que el cliente Harry Potter se autentica en el banco (completed)" width="1366"/>
+                <img src="52b4c40288c18013211b60798d6dd3f00c1346b4572ac6a1b12599bd606a6dcd.png" title=" Cuando seleccione la cuenta con numero 2" width="1366"/>
+                <img src="52b4c40288c18013211b60798d6dd3f00c1346b4572ac6a1b12599bd606a6dcd.png" title=" User home task" width="1366"/>
+                <img src="52b4c40288c18013211b60798d6dd3f00c1346b4572ac6a1b12599bd606a6dcd.png" title=" user clicks on Acceso a Login" width="1366"/>
+                <img src="5aa5b0dc494acdbe9b6608ba7791ce6389f02e065ae697fd95a8492fe1c2b4e8.png" title=" user clicks on Acceso a Login" width="1366"/>
+                <img src="5aa5b0dc494acdbe9b6608ba7791ce6389f02e065ae697fd95a8492fe1c2b4e8.png" title=" user clicks on Acceso a Login (completed)" width="1366"/>
+                <img src="0a8edfbcdfd0e48235a6445865cc47526fede2d1e3e7e7fb20618e1a6f31d524.png" title=" user clicks on Your Name" width="1366"/>
+                <img src="f3f0ed015d29f073c38209ff508c044adfa6e05bffa2585f6c3ea744de299d52.png" title=" user clicks on Your Name" width="1366"/>
+                <img src="f3f0ed015d29f073c38209ff508c044adfa6e05bffa2585f6c3ea744de299d52.png" title=" user clicks on Your Name (completed)" width="1366"/>
+                <img src="f3f0ed015d29f073c38209ff508c044adfa6e05bffa2585f6c3ea744de299d52.png" title=" user clicks on Harry Potter" width="1366"/>
+                <img src="54c022aaaa596e458612e617b01bb8ec089cc35e57e992052787f284895c6232.png" title=" user clicks on Harry Potter" width="1366"/>
+                <img src="54c022aaaa596e458612e617b01bb8ec089cc35e57e992052787f284895c6232.png" title=" user clicks on Harry Potter (completed)" width="1366"/>
+                <img src="54c022aaaa596e458612e617b01bb8ec089cc35e57e992052787f284895c6232.png" title=" user clicks on Login" width="1366"/>
+                <img src="4938917d79d6ddae08900cf28857bc17eee4be62f3b3721f4673db340141b9b2.png" title=" user clicks on Login" width="1366"/>
+                <img src="4938917d79d6ddae08900cf28857bc17eee4be62f3b3721f4673db340141b9b2.png" title=" user clicks on Login (completed)" width="1366"/>
+                <img src="032f3c75dc3e5fe844f4b58d673f74c27487ca7fc9453aa94b75728fbe463dff.png" title=" user clicks on Cuenta" width="1366"/>
+                <img src="8d49308faa39ed0f7652a1b4e2fe1ecd0ade4cfdc858440c4294b29902cba812.png" title=" user clicks on Cuenta" width="1366"/>
+                <img src="8d49308faa39ed0f7652a1b4e2fe1ecd0ade4cfdc858440c4294b29902cba812.png" title=" user clicks on Cuenta (completed)" width="1366"/>
+                <img src="8d49308faa39ed0f7652a1b4e2fe1ecd0ade4cfdc858440c4294b29902cba812.png" title=" user clicks on Boton seleccionar una ubicacion" width="1366"/>
+                <img src="8d49308faa39ed0f7652a1b4e2fe1ecd0ade4cfdc858440c4294b29902cba812.png" title=" user clicks on Boton seleccionar una ubicacion (completed)" width="1366"/>
+                <img src="8d49308faa39ed0f7652a1b4e2fe1ecd0ade4cfdc858440c4294b29902cba812.png" title=" user clicks on Boton Deposito" width="1366"/>
+                <img src="7f7307d78275cc2a10e1258db9861943bd37d3bd66b21987cfd29bd66c4a00c0.png" title=" user clicks on Boton Deposito" width="1366"/>
+                <img src="7f7307d78275cc2a10e1258db9861943bd37d3bd66b21987cfd29bd66c4a00c0.png" title=" user clicks on Boton Deposito (completed)" width="1366"/>
+                <img src="7f7307d78275cc2a10e1258db9861943bd37d3bd66b21987cfd29bd66c4a00c0.png" title=" user enters '300' into AMOUNT" width="1366"/>
+                <img src="531f0980d49ca6a8ed3ac4ac492919c639c1df371652d237b5cc7a8115db1bd8.png" title=" user enters '300' into AMOUNT (completed)" width="1366"/>
+                <img src="531f0980d49ca6a8ed3ac4ac492919c639c1df371652d237b5cc7a8115db1bd8.png" title=" user clicks on Boton Deposito Final" width="1366"/>
+                <img src="a80d46c4001d33060cdc95b5748f3183a37394c2f954193c090009ac46008b2e.png" title=" user clicks on Boton Deposito Final" width="1366"/>
+                <img src="a80d46c4001d33060cdc95b5748f3183a37394c2f954193c090009ac46008b2e.png" title=" user clicks on Boton Deposito Final (completed)" width="1366"/>
+                <img src="d857545febc6cdec1583aaaaf80fb7c8a6e28b4c44f5dc00cc966798dbc32733.png" title=" User home task (completed)" width="1366"/>
+                <img src="d857545febc6cdec1583aaaaf80fb7c8a6e28b4c44f5dc00cc966798dbc32733.png" title=" Cuando seleccione la cuenta con numero 2 (completed)" width="1366"/>
+                <img src="d857545febc6cdec1583aaaaf80fb7c8a6e28b4c44f5dc00cc966798dbc32733.png" title=" Example 3: {Valor=2} (completed): <span class='success-color'>SUCCESS</span>" width="1366"/>
             </div>
         </div>
 

@@ -1,155 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Deposito exitoso" tests="3" skipped="0" failures="3" errors="0" timestamp="2024-04-26T22:20:09" hostname="SQABOG-PCC84630" time="72.319">
+<testsuite name="Deposito exitoso" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-04-29T15:22:11" hostname="SQABOG-PCC84630" time="55.175">
   <properties/>
-  <testcase name=" #1" classname="Deposito exitoso" time="56.122">
-    <failure message="io.cucumber.junit.UndefinedStepException: The step 'seleccione la cuenta con numero &quot;1006&quot;' and 1 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@Cuando(&quot;seleccione la cuenta con numero {string}&quot;)&#10;public void seleccioneLaCuentaConNumero(String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Entonces(&quot;realizara un deposito de {string} rupias exitosamente&quot;)&#10;public void realizaraUnDepositoDeRupiasExitosamente(String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: The step 'seleccione la cuenta con numero &quot;1006&quot;' and 1 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Cuando(&quot;seleccione la cuenta con numero {string}&quot;)
-public void seleccioneLaCuentaConNumero(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Entonces(&quot;realizara un deposito de {string} rupias exitosamente&quot;)
-public void realizaraUnDepositoDeRupiasExitosamente(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-</failure>
-  </testcase>
-  <testcase name=" #2" classname="Deposito exitoso" time="12.452">
-    <failure message="io.cucumber.junit.UndefinedStepException: The step 'seleccione la cuenta con numero &quot;1005&quot;' and 1 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@Cuando(&quot;seleccione la cuenta con numero {string}&quot;)&#10;public void seleccioneLaCuentaConNumero(String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Entonces(&quot;realizara un deposito de {string} rupias exitosamente&quot;)&#10;public void realizaraUnDepositoDeRupiasExitosamente(String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: The step 'seleccione la cuenta con numero &quot;1005&quot;' and 1 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Cuando(&quot;seleccione la cuenta con numero {string}&quot;)
-public void seleccioneLaCuentaConNumero(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Entonces(&quot;realizara un deposito de {string} rupias exitosamente&quot;)
-public void realizaraUnDepositoDeRupiasExitosamente(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-</failure>
-  </testcase>
-  <testcase name=" #3" classname="Deposito exitoso" time="3.745">
-    <failure message="io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.NumberFormatException: For input string: &quot;public&quot;" type="io.github.bonigarcia.wdm.config.WebDriverManagerException">io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.NumberFormatException: For input string: &quot;public&quot;
-	at app//io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1435)
-	at app//io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1195)
-	at app//io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1451)
-	at app//io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1432)
-	at app//io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1195)
-	at app//io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1425)
-	at app//io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1195)
-	at app//io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
-	at app//com.globalsqa.stepDefinitions.StepDefCrearCuenta.setUp(StepDefCrearCuenta.java:20)
-Caused by: java.lang.NumberFormatException: For input string: &quot;public&quot;
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.base/java.lang.Integer.parseInt(Integer.java:652)
-	at java.base/java.lang.Integer.parseInt(Integer.java:770)
-	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.buildUrl(ChromeDriverManager.java:178)
-	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.buildUrl(ChromeDriverManager.java:155)
-	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1272)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1189)
-	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1451)
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1432)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1195)
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1425)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1195)
-	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
-	at com.globalsqa.stepDefinitions.StepDefCrearCuenta.setUp(StepDefCrearCuenta.java:20)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
-	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
-	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:89)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
-	at io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:259)
-	at io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:58)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at io.cucumber.junit.CucumberSerenityRunner$RunCucumber.evaluate(CucumberSerenityRunner.java:288)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:176)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-</failure>
-  </testcase>
+  <testcase name=" #1" classname="Deposito exitoso" time="34.225"/>
+  <testcase name=" #2" classname="Deposito exitoso" time="9.727"/>
+  <testcase name=" #3" classname="Deposito exitoso" time="11.223"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 124.0.6367.91 (51df0e5e17a8b0a4f281c1665dbd1b8a0c6b46af-refs/branch-heads/6367@{#984}) on port 60023
+  <system-err><![CDATA[Starting ChromeDriver 124.0.6367.91 (51df0e5e17a8b0a4f281c1665dbd1b8a0c6b46af-refs/branch-heads/6367@{#984}) on port 59410
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-abr. 26, 2024 5:20:34 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+abr. 29, 2024 10:22:33 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-abr. 26, 2024 5:20:37 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+abr. 29, 2024 10:22:33 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 124, so returning the closest version found: a no-op implementation
-abr. 26, 2024 5:20:37 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+abr. 29, 2024 10:22:33 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Unable to find CDP implementation matching 124.
-abr. 26, 2024 5:20:37 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+abr. 29, 2024 10:22:33 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
 WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.2` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Starting ChromeDriver 124.0.6367.91 (51df0e5e17a8b0a4f281c1665dbd1b8a0c6b46af-refs/branch-heads/6367@{#984}) on port 53646
+Starting ChromeDriver 124.0.6367.91 (51df0e5e17a8b0a4f281c1665dbd1b8a0c6b46af-refs/branch-heads/6367@{#984}) on port 58890
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-abr. 26, 2024 5:21:10 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+abr. 29, 2024 10:22:47 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-abr. 26, 2024 5:21:10 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+abr. 29, 2024 10:22:47 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 124, so returning the closest version found: a no-op implementation
-abr. 26, 2024 5:21:10 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+abr. 29, 2024 10:22:47 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Unable to find CDP implementation matching 124.
-abr. 26, 2024 5:21:10 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+abr. 29, 2024 10:22:47 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.2` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Starting ChromeDriver 124.0.6367.91 (51df0e5e17a8b0a4f281c1665dbd1b8a0c6b46af-refs/branch-heads/6367@{#984}) on port 56483
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+abr. 29, 2024 10:22:57 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+abr. 29, 2024 10:22:57 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 124, so returning the closest version found: a no-op implementation
+abr. 29, 2024 10:22:57 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 124.
+abr. 29, 2024 10:22:57 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
 WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.2` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
 </testsuite>

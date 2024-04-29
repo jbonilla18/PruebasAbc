@@ -20,8 +20,9 @@ public class HomeUi {
 
     public static final Target BTN_CUENTA=Target.the("Cuenta")
             .located(By.id("accountSelect"));
-    public static final Target NUM_CUENTA=Target.the("Numero de Cuenta 1006")
-            .located(By.xpath("//select[@id='accountSelect']/option[@value='number:1006']"));
+
+    public static final Target BTN_UBICACIONES = Target.the("Boton seleccionar una ubicacion")
+            .locatedBy("//select[@id='accountSelect']/option[@value='number:{0}']");
 
     public static final Target BTN_DEPOSITO=Target.the("Boton Deposito")
             .located(By.xpath("//button[@ng-click='deposit()']"));

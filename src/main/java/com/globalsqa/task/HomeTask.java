@@ -19,6 +19,13 @@ import static net.serenitybdd.screenplay.ui.Select.optionNumber;
 public class HomeTask implements Task {
         private static ArrayList<Map<String, String>> leerExcel = new ArrayList();
 
+    private int valor1;
+
+    public HomeTask(int valor1) {
+        this.valor1 = valor1;
+    }
+
+
     @Override
     public <T extends Actor> void performAs(T actor) {
 
@@ -32,19 +39,19 @@ public class HomeTask implements Task {
                 Click.on(LNK_YOUR_NAME),
                 Click.on(SEL_HARRY),
                 Click.on(BTN_LOGIN),
-                Click.on(BTN_CUENTA),
+                Click.on(BTN_CUENTA)
+        );
+       actor.attemptsTo(
 
-                Click.on(NUM_CUENTA),
-
+                Click.on(BTN_UBICACIONES.of(leerExcel.get(valor1).get("Cuenta"))),
                 Click.on(BTN_DEPOSITO),
-                Enter.keyValues(leerExcel.get(1).get("Valor")).into(VAL_AMOUNT),
-
+                Enter.keyValues(leerExcel.get(valor1).get("Valor")).into(VAL_AMOUNT),
                 Click.on(BTN_DEPOSITO2)
 
         );
     }
 
-    public static Performable on(){
-        return instrumented(HomeTask.class);
+    public static Performable on(int valor1) {
+        return instrumented(HomeTask.class, valor1);
     }
 }
