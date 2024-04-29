@@ -5,30 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e4ca6e9-9939-4c13-9f1c-ec56350c5851" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/globalsqa/task/HomeTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/globalsqa/task/HomeTask.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/globalsqa/stepDefinitions/StepDef.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/globalsqa/stepDefinitions/StepDef.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.globalsqa.runners.Runner.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/com.globalsqa.runners.Runner.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.globalsqa.runners.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/com.globalsqa.runners.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/test/features/deposito.feature" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/test/features/deposito.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datos/Data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/datos/Data.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/globalsqa/task/HomeTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/globalsqa/task/HomeTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/globalsqa/ui/HomeUi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/globalsqa/ui/HomeUi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/globalsqa/stepDefinitions/StepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/globalsqa/stepDefinitions/StepDef.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/deposito.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/deposito.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/serenity/01f5288b80adbd3af52a8ed68a4a616d3164f750229f80da1ef344382d948835.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/01f5288b80adbd3af52a8ed68a4a616d3164f750229f80da1ef344382d948835.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/serenity/0409204ca8afbf5bf6585b3885cc8738c2d2ad606396eef0525217b1d78c35c2.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/0409204ca8afbf5bf6585b3885cc8738c2d2ad606396eef0525217b1d78c35c2.html" afterDir="false" />

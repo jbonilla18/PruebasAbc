@@ -14,6 +14,6 @@ Característica: Deposito exitoso
       | 1     |
       | 2     |
 
-#debe ser dinamico
+
 
 
