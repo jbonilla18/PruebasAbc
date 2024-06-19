@@ -1,6 +1,5 @@
 package com.globalsqa.ui;
 
-import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
 
