@@ -30,7 +30,7 @@ public class Excel {
             while (cellIterator.hasNext()) {
                 Cell cell = cellIterator.next();
                 cell.getColumnIndex();
-                switch (cell.getCellTypeEnum()) {
+                switch (cell.getCellType()) {
                     case STRING:
                         informacionProyecto.put(titulos.getCell(cell.getColumnIndex()).toString(), cell.getStringCellValue());
                         break;

@@ -6,15 +6,12 @@ import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
-import net.serenitybdd.screenplay.ui.Select;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Map;
-
 import static com.globalsqa.ui.HomeUi.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
-import static net.serenitybdd.screenplay.ui.Select.optionNumber;
+
 
 public class HomeTask implements Task {
         private static ArrayList<Map<String, String>> leerExcel = new ArrayList();

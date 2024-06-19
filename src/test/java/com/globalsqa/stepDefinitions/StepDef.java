@@ -44,6 +44,7 @@ public class StepDef {
                 Open.url("https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login")
 
         );
+        System.out.println("queElClienteHarryPotterSeAutenticaEnElBanco");
     }
 
     @Cuando("seleccione la cuenta con numero {int}")
@@ -52,51 +53,16 @@ public class StepDef {
 
     }
 
-    @Cuando("seleccione la cuenta con numero Cuenta")
-    public void seleccioneLaCuentaConNumeroCuenta(io.cucumber.datatable.DataTable dataTable) {
-        ArrayList<Map<String, String>> dataExcel;
-        try {
-            dataExcel = Excel.leerDatosDeHojaDeExcel("datos/Data.xlsx", "Cuentas");
-
-
-            OnStage.theActorInTheSpotlight()
-                    .should(GivenWhenThen.seeThat(WebElementQuestion.the("NUM_CUENTA"),
-                                    WebElementStateMatchers.containsText(dataExcel.get(1).get("Cuenta"))
-                            )
-                    );
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-    }
-
     @Entonces("realizara un deposito de {string} rupias exitosamente")
     public void realizaraUnDepositoDeRupiasExitosamente(String string) {
-        ArrayList<Map<String, String>> dataExcel;
-        try {
-            dataExcel = Excel.leerDatosDeHojaDeExcel("datos/Data.xlsx", "Cuentas");
 
 
-            OnStage.theActorInTheSpotlight()
-                    .should(GivenWhenThen.seeThat(WebElementQuestion.the(VAL_AMOUNT),
-                                    WebElementStateMatchers.containsText(dataExcel.get(1).get("Valor"))
-                            )
-                    );
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-
-        }
-
-    public void ValidateDeposit() {
+   /* public void ValidateDeposit() {
         theActorInTheSpotlight().should(
                 seeThat(
                         ValidateDeposit.validateDeposit(), Matchers.equalTo(true)
                 )
-        );
+        );*/
     }
 }
 

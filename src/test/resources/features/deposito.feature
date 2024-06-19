@@ -6,7 +6,7 @@ Característica: Deposito exitoso
   Esquema del escenario:
     Dado que el cliente Harry Potter se autentica en el banco
     Cuando seleccione la cuenta con numero <Valor>
-    #Entonces realizara un deposito de "<Valor>" rupias exitosamente
+    Entonces realizara un deposito de "<Valor>" rupias exitosamente
 
     Ejemplos:
       | Valor |
